@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Year Countdown!!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main__container">
+      <header>
+        <h1>Countdown to 2025!!</h1>
+      </header>
+
+      <main>
+        <section id="main-countdown">
+          <div id="countdown-timer">
+            <div class="time-unit">
+              <span id="days">00</span>
+              <span>Days</span>
+            </div>
+            <div class="time-unit">
+              <span id="hours">00</span>
+              <span>Hours</span>
+            </div>
+            <div class="time-unit">
+              <span id="minutes">00</span>
+              <span>Minutes</span>
+            </div>
+            <div class="time-unit">
+              <span id="seconds">00</span>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="us-timezones">
+          <h2 class="timezone_title">Pick a Time Zone:</h2>
+          <div class="timezone-clocks">
+            <button class="clock" data-offset="-5">Eastern Time ⏰</button>
+            <button class="clock" data-offset="-6">Central Time ⏰</button>
+            <button class="clock" data-offset="-7">Mountain Time ⏰</button>
+            <button class="clock" data-offset="-8">Pacific Time ⏰</button>
+          </div>
+        </section>
+
+        <section id="seasonal-decor">
+          <div class="decor-items">
+            <span class="decor">❄️</span>
+            <span class="decor">🕯️</span>
+            <span class="decor">🧣</span>
+            <span class="decor">☃️</span>
+            <span class="decor">✨</span>
+            <span class="decor">🛷</span>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <footer class="footer">Devoloped By A. Juarez 2024</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let countDownDate = new Date("Jan 1, 2025 00:00:00 GMT-0500").getTime();
+        let selectedOffset = -5; // Default to Eastern Time
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const distance = countDownDate - now;
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerHTML = days
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("hours").innerHTML = hours
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("minutes").innerHTML = minutes
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("seconds").innerHTML = seconds
+            .toString()
+            .padStart(2, "0");
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown-timer").innerHTML =
+              "HAPPY NEW YEAR!";
+          }
+        }
+
+        function setTimezone(offset) {
+          selectedOffset = offset;
+          countDownDate = new Date(
+            `Jan 1, 2025 00:00:00 GMT${offset < 0 ? "-" : "+"}${Math.abs(offset)
+              .toString()
+              .padStart(2, "0")}00`
+          ).getTime();
+          updateCountdown(); // Call this to update the display immediately
+          document
+            .querySelectorAll(".clock")
+            .forEach((btn) => btn.classList.remove("selected"));
+          document
+            .querySelector(`.clock[data-offset="${offset}"]`)
+            .classList.add("selected");
+        }
+
+        document.querySelectorAll(".clock").forEach((button) => {
+          button.addEventListener("click", function () {
+            setTimezone(parseInt(this.getAttribute("data-offset")));
+          });
+        });
+
+        const x = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+        document
+          .querySelector('.clock[data-offset="-5"]')
+          .classList.add("selected");
+      });
+    </script>
+  </body>
+</html>
