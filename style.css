@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 95vh;
-  background-image: url("/assets/fireworks.png");
+  background-image: url("assets/fireworks.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
