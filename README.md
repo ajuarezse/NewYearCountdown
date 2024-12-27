@@ -15,6 +15,10 @@ This is a simple web application that displays a countdown timer to the year 202
 - 🎨 **CSS (Cascading Style Sheets):** Used to style the web page, controlling the visual appearance of the countdown timer, layout, and festive decorations.
 - 📱 **Responsive Design:** Ensures the web page adapts and displays optimally across different devices, from desktops to mobile phones.
 
+## Links:
+
+- Visit the live site[here](https://ajuarezse.github.io/NewYearCountdown/).
+
 ## Next Steps:
 
-I plan to next make this site available by launching it on Github Pages. This will allow anyone to view and interact with the countdown timer.
+I plan to optimize the style and usablility of the site.
