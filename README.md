@@ -21,4 +21,4 @@ This is a simple web application that displays a countdown timer to the year 202
 
 ## Next Steps:
 
-I plan to optimize the style and usablility of the site.
+I plan to optimize the style and usablility of the site. Feel free to fork the code and make it your own!
