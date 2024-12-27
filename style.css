@@ -35,7 +35,7 @@ h2 {
 }
 
 #main-countdown {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 121px;
   padding: 20px;
   margin-bottom: 30px;
