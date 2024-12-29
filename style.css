@@ -26,24 +26,18 @@ header {
 }
 
 h1 {
-  font-size: 3em;
-}
-
-h2 {
-  color: #ffd700;
-  background-color: black;
+  font-size: 4em;
 }
 
 #main-countdown {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 121px;
-  padding: 20px;
   margin-bottom: 30px;
 }
 
 #countdown-timer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 1.5em;
 }
 
@@ -83,8 +77,10 @@ h2 {
   text-align: center;
 }
 
-.timezone-title {
-  width: fit-content;
+.timezone_title {
+  display: flex;
+  justify-content: center;
+  color: yellow;
 }
 
 .footer {
