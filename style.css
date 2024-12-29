@@ -91,13 +91,26 @@ header {
 }
 
 @media (max-width: 768px) {
+  .header__title {
+    font-size: 2em;
+  }
+
+  .main__container {
+    padding: 20px;
+    height: auto;
+    min-height: 95vh;
+    background-size: cover;
+    background-image: top center;
+  }
+
   #countdown-timer {
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2em;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .time-unit {
     margin-bottom: 10px;
+    font-size: 1.5em;
   }
 }
