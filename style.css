@@ -25,8 +25,11 @@ header {
   text-align: center;
 }
 
-h1 {
+.header__title {
   font-size: 4em;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 #main-countdown {
