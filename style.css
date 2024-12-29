@@ -74,6 +74,9 @@ header {
 
 .decor-items {
   font-size: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer {
