@@ -2,10 +2,10 @@
 
 body {
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main__container {
-  font-family: "Roboto", sans-serif;
   background-color: black;
   color: #ffffff;
   line-height: 1.6;
@@ -86,7 +86,7 @@ header {
 .timezone_title {
   display: flex;
   justify-content: center;
-  color: yellow;
+  color: rgb(225, 225, 145);
 }
 
 .footer {
