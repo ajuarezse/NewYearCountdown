@@ -19,6 +19,6 @@ This is a simple web application that displays a countdown timer to the year 202
 
 - Visit the live site[here](https://ajuarezse.github.io/NewYearCountdown/).
 
-## Next Steps:
+## Next Steps for the 2026 countdown:
 
-I plan to optimize the style and usablility of the site. Feel free to fork the code and make it your own!
+I plan to develop this project further by refactoring the code into componenets using react. Feel free to fork the code and make it your own!
