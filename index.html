@@ -113,7 +113,7 @@
         function setTimezone(offset) {
           selectedOffset = offset;
           countDownDate = new Date(
-            `Jan 1, 2025 00:00:00 GMT${offset < 0 ? "-" : "+"}${Math.abs(offset)
+            `Jan 1, 2026 00:00:00 GMT${offset < 0 ? "-" : "+"}${Math.abs(offset)
               .toString()
               .padStart(2, "0")}00`
           ).getTime();
