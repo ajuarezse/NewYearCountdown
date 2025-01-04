@@ -1,6 +1,6 @@
 # New Year Countdown:
 
-This is a simple web application that displays a countdown timer to the year 2025 . It also allows users to select a specific U.S. time zone to view the countdown in their local time. I built it as a December Code Challenge at TripleTen.
+This is a simple web application that displays a countdown timer to the year 2025 . It also allows users to select a specific U.S. time zone to view the countdown in their local time. I originally built it as a 2024 December Code Challenge at TripleTen software developer school.
 
 ## Key Features include:
 
