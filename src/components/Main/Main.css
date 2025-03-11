@@ -6,23 +6,12 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  height: 95vh;
+  height: 65vh;
   background-image: url("src/assets/fireworks.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   flex-direction: column;
-}
-
-header {
-  text-align: center;
-}
-
-.header__title {
-  font-size: 4em;
-  display: flex;
-  position: relative;
-  justify-content: center;
 }
 
 #main-countdown {
@@ -79,10 +68,6 @@ header {
 }
 
 @media (max-width: 768px) {
-  .header__title {
-    font-size: 2em;
-  }
-
   .main__container {
     padding: 20px;
     height: auto;

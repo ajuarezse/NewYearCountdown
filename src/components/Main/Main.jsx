@@ -5,10 +5,6 @@ function Main() {
     <div>
       {" "}
       <section class="main__container">
-        <header>
-          <h1 class="header__title">Countdown to 2026!</h1>
-        </header>
-
         <main>
           <section id="main-countdown">
             <div id="countdown-timer">
