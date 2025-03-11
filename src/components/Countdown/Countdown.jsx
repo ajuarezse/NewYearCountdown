@@ -1,7 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Countdown.css";
 
 const Countdown = () => {
+  const [time, setTime] = useState({
+    days: "00",
+    Hours: "00",
+    Minutes: "00",
+    Seconds: "00",
+  });
+
+  useEffect(() => {
+    const countDownDate = new Date(``);
+  });
+
   return (
     <div>
       <section id="main-countdown">
