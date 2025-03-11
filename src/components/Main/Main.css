@@ -53,6 +53,12 @@ header {
   gap: 10px;
 }
 
+.timezone_title {
+  display: flex;
+  justify-content: center;
+  color: rgb(225, 225, 145);
+}
+
 .clock {
   background-color: white;
   border-radius: 10px;
@@ -63,6 +69,13 @@ header {
 
 .clock:hover {
   background-color: grey;
+}
+
+.decor-items {
+  font-size: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
