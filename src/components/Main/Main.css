@@ -1,0 +1,91 @@
+.main__container {
+  background-color: black;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  background-image: url("src/assets/fireworks.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+}
+
+.header__title {
+  font-size: 4em;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+#main-countdown {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 121px;
+  margin-bottom: 30px;
+}
+
+#countdown-timer {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+
+.time-unit {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.time-unit span:first-child {
+  font-size: 1.2em;
+}
+
+.timezone-clocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.clock {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.clock:hover {
+  background-color: grey;
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 2em;
+  }
+
+  .main__container {
+    padding: 20px;
+    height: auto;
+    min-height: 95vh;
+    background-size: cover;
+    background-image: top center;
+  }
+
+  #countdown-timer {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .time-unit {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+}
