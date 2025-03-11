@@ -21,4 +21,4 @@ This is a simple web application that displays a countdown timer to the year 202
 
 ## Next Steps for the 2026 countdown:
 
-Currently upgrading this project to leverage React component structures. Stay Tuned!
+Currently upgrading this project to leverage React component structures. The basic components are in place. Next is getting the countdown to start! Stay tuned.
