@@ -1,4 +1,10 @@
 .footer {
   text-align: center;
   color: white;
+  padding: 1rem 0 0rem;
+}
+
+.footer__credit {
+  color: grey;
+  font-size: 0.8em;
 }
