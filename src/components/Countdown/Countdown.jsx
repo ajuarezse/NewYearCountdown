@@ -8,9 +8,16 @@ const Countdown = () => {
     Minutes: "00",
     Seconds: "00",
   });
+  const [selectedOffset, setSelectedOffset] = useState(-5);
 
   useEffect(() => {
-    const countDownDate = new Date(``);
+    const countDownDate = new Date(
+      `Jan 1, 2026 00:00:00 GMT${selectedOffset < 0 ? "-" : "+"}${Math.abs(
+        selectedOffset
+      )
+        .toString()
+        .padStart(2, "0")}00`
+    ).getTime();
   });
 
   return (
