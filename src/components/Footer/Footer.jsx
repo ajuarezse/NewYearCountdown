@@ -6,16 +6,21 @@ function Footer() {
     <footer className="footer">
       <p className="footer__credit">
         @ 2025 Angel Juarez 2025
-        <a href="https://github.com/ajuarezse" target="_blank">
-          &nbsp;Github
+        <a
+          href="https://github.com/ajuarezse"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer__link"
+        >
           <GithubIcon />
         </a>
         |
         <a
           href="https://www.linkedin.com/in/angel-juarez-tech/"
           target="_blank"
+          rel="noopener noreferrer"
+          className="footer__link"
         >
-          Linkedin
           <LinkedinIcon />
         </a>
       </p>
