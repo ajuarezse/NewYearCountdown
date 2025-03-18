@@ -10,18 +10,15 @@ function Footer() {
           href="https://github.com/ajuarezse"
           target="_blank"
           rel="noopener noreferrer"
-          className="footer__link"
         >
-          <GithubIcon />
+          <GithubIcon className="footer__icon" />
         </a>
-        |
         <a
           href="https://www.linkedin.com/in/angel-juarez-tech/"
           target="_blank"
           rel="noopener noreferrer"
-          className="footer__link"
         >
-          <LinkedinIcon />
+          <LinkedinIcon className="footer__icon" />
         </a>
       </p>
     </footer>

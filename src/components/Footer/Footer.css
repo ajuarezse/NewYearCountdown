@@ -7,11 +7,21 @@
 .footer__credit {
   color: grey;
   font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
 }
 
-.footer__link {
+.footer__icon {
   height: 24px;
   width: 24px;
   display: flex;
-  color: white;
+  fill: rgb(178, 178, 178);
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.footer__icon:hover {
+  fill: rgb(114, 229, 225);
+  transform: scale(1.3);
 }
