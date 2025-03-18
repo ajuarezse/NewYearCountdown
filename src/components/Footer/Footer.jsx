@@ -8,6 +8,7 @@ function Footer() {
         @ 2025 Angel Juarez 2025
         <a href="https://github.com/ajuarezse" target="_blank">
           &nbsp;Github
+          <GithubIcon />
         </a>
         |
         <a
@@ -15,6 +16,7 @@ function Footer() {
           target="_blank"
         >
           Linkedin
+          <LinkedinIcon />
         </a>
       </p>
     </footer>
