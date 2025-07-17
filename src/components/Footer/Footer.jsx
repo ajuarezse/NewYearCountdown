@@ -21,7 +21,7 @@ function Footer() {
           <LinkedinIcon className="footer__icon" />
         </a>
         <a
-          href="https://angejuarez.dev"
+          href="https://angeljuarez.dev"
           target="_blank"
           rel="noopener noreferrer"
         >
