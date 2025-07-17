@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { GithubIcon, LinkedinIcon } from "../../assets/icons";
+import { GithubIcon, LinkedinIcon, WebsiteIcon } from "../../assets/icons";
 
 function Footer() {
   return (
@@ -19,6 +19,13 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <LinkedinIcon className="footer__icon" />
+        </a>
+        <a
+          href="https://angejuarez.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WebsiteIcon className="footer__icon" />
         </a>
       </p>
     </footer>
