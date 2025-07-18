@@ -1,23 +1,17 @@
 .main__container {
-  background-color: black;
   color: #ffffff;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  height: 65vh;
-  background-image: url("../../assets/fireworks.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   flex-direction: column;
+  align-items: center;
 }
 
 #main-countdown {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 121px;
-  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 #countdown-timer {

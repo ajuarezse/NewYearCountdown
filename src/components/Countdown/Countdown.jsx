@@ -52,11 +52,11 @@ const Countdown = () => {
       <div id="countdown-timer">
         <div className="time-unit">
           <span id="days">{time.days}</span>
-          <span>Days&nbsp;</span>
+          <span>Days &nbsp;</span>
         </div>
         <div className="time-unit">
           <span id="hours">{time.hours}</span>
-          <span>Hours</span>
+          <span>Hours </span>
         </div>
         <div className="time-unit">
           <span id="minutes">{time.minutes}</span>
@@ -69,7 +69,7 @@ const Countdown = () => {
       </div>
 
       <section id="us-timezones">
-        <h2 className="timezone_title">Pick a Time ⏰ Zone:</h2>
+        <h2 className="timezone_title">Pick a Time Zone:</h2>
         <div className="timezone-clocks">
           <button
             className={`clock ${selectedOffset === -8 ? "selected" : ""}`}
